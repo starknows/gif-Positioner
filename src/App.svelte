@@ -1,5 +1,4 @@
 <script>
-  // import GIFPlayerV2 from "js-gifplayer"; // or path to GIFPlayerV2.js
   let imageSrc = null;
   let isShowtime = false;
   let itemArray = [];
