@@ -2,7 +2,7 @@
   let imageSrc = null;
   let isShowtime = false;
   let itemArray = [];
-  let setBpm = 120;
+  let setBpm = 60;
   function handleUpload(e) {
     const [file] = e.target.files;
     if (file) {
@@ -123,6 +123,7 @@
           <span class="button-82-front text"> 開始你的表演 </span>
         </button>
         <span> tip: 表演狀態時，點擊畫面四角即可返回 </span>
+        <span> tip2: 建議使用 1秒1完整動作 的GIF </span>
       </div>
       <div class="author-wrapper card flex-center flex-col">
         <p>Author: starknows</p>
@@ -191,7 +192,7 @@
           class="render-unit"
           style={`width:${item.width}px;height:${item.height}px;left:${item.left}%;top:${item.top}%;`}
         >
-          <gif-player src={imageSrc} speed={setBpm / 30} play />
+          <gif-player src={imageSrc} speed={setBpm / 60} play />
         </div>
       {/each}
     </div>
