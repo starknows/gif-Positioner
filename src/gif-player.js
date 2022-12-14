@@ -1,3 +1,6 @@
+/**
+ * https://github.com/CaptainCodeman/gif-player
+ */
 import { GifReader } from "./omggif";
 
 export default function () {
